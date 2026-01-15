@@ -4,10 +4,11 @@
  */
 package lec5random;
 
-/**
- *
- * @author ADMIN
- */
+import java.util.*;
 public class baitap2 {
-    
+    public static void main(String[] args) {
+        Random rd = new Random();
+        double so = 1.8 + rd.nextDouble() * (8.0 - 1.8);
+        System.out.println("So thuc ngau nhien (1.8 - 8.0): " + so);
+    }
 }

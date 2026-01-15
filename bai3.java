@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package lec5random;
 
-/**
- *
- * @author ADMIN
- */
+import java.util.*;
+
 public class bai3 {
-    
+    public static void main(String[] args) {
+        Random rd = new Random();
+        int so = rd.nextInt(80 - 3 + 1) + 3;
+        System.out.println("So ngau nhien: " + so);
+
+        if (so % 2 == 0) {
+            System.out.println("Day la so chan");
+        } else {
+            System.out.println("Day la so le");
+        }
+    }
 }
